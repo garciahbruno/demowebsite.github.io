@@ -65,26 +65,27 @@
 								<section>
 								<section>
 									<h4>Interest Form</h4>
+									<div id="notification" style="display:none;"></div>
+
 									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											
-											
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Additional Information" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-												</ul>
-											</div>
-										</div>
+									    <div class="row gtr-uniform">
+									        <div class="col-6 col-12-xsmall">
+									            <input type="text" name="demo-name" id="demo-name" placeholder="Name" />
+									        </div>
+									        <div class="col-6 col-12-xsmall">
+									            <input type="email" name="demo-email" id="demo-email" placeholder="Email" />
+									        </div>
+									        <div class="col-12">
+									            <textarea name="demo-message" id="demo-message" placeholder="Additional Information" rows="6"></textarea>
+									        </div>
+									        <div class="col-12">
+									            <ul class="actions">
+									                <li><input type="submit" value="Send Message" class="primary" onclick="sendMail(); return false;" /></li>
+									            </ul>
+									        </div>
+									    </div>
 									</form>
+
 								</section>
 
 								<section>
