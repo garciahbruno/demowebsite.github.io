@@ -1,7 +1,4 @@
-// Ensure the function is correct and prevents default form submission
-function sendMail(event) {
-    event.preventDefault(); // Prevents default form submission
-    
+function sendMail() {
     let params = {
         name: document.getElementById("demo-name").value,
         email: document.getElementById("demo-email").value,
@@ -10,15 +7,13 @@ function sendMail(event) {
 
     emailjs.send("service_0f734hc", "template_fzlymrv", params)
         .then(function(response) {
-            console.log("Success", response.status, response.text);
-            alert("Email Sent");
-        }, function(error) {
-            console.log("FAILED...", error);
-            alert("Failed to send email. Please try again.");
+            document.getElementById('notification').innerHTML = '<p>Email Sent Successfully!</p>';
+            document.getElementById('notification').style.display = 'block';
+            document.getElementById('notification').style.color = 'green';
+        })
+        .catch(function(error) {
+            document.getElementById('notification').innerHTML = '<p>Failed to send email. Please try again.</p>';
+            document.getElementById('notification').style.display = 'block';
+            document.getElementById('notification').style.color = 'red';
         });
 }
-
-// Attach the sendMail function to the form submission event
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector("form").addEventListener("submit", sendMail);
-});
