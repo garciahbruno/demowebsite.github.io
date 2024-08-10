@@ -7,7 +7,7 @@ function sendMail() {
 
     emailjs.send("service_0f734hc", "template_fzlymrv", params)
         .then(function(response) {
-            document.getElementById('notification').innerHTML = '<p>Email Sent Successfully!</p>';
+            document.getElementById('notification').innerHTML = '<p>Form Submitted</p>';
             document.getElementById('notification').style.display = 'block';
             document.getElementById('notification').style.color = 'green';
         })
