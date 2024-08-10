@@ -1,11 +1,6 @@
-// Initialize EmailJS with your user ID
-(function() {
-    emailjs.init("P9JL4E4XDqClwNuCi");  // Replace YOUR_USER_ID with your actual User ID
-})();
-
-// Function to send email
+// Ensure the function is correct and prevents default form submission
 function sendMail(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); // Prevents default form submission
     
     let params = {
         name: document.getElementById("demo-name").value,
@@ -23,5 +18,7 @@ function sendMail(event) {
         });
 }
 
-// Attach sendMail function to form submission
-document.getElementById("interest-form").addEventListener("submit", sendMail);
+// Attach the sendMail function to the form submission event
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").addEventListener("submit", sendMail);
+});
