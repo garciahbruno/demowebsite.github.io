@@ -10,8 +10,8 @@ function sendMail(event) {
 
     emailjs.send("service_0f734hc", "template_fzlymrv", params)
         .then(function(response) {
-            console.log("SUCCESS!", response.status, response.text);
-            alert("Email Sent!!");
+            console.log("Success", response.status, response.text);
+            alert("Email Sent");
         }, function(error) {
             console.log("FAILED...", error);
             alert("Failed to send email. Please try again.");
