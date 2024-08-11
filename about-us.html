@@ -12,6 +12,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+
+		
+		<style>
+			.side-by-side {
+			display: flex;
+			align-items: center; /* Aligns items vertically in the center */
+			justify-content: space-between; /* Optional: Adjusts spacing between the elements */
+			flex-wrap: wrap; /* Allows wrapping on smaller screens */
+			}
+		
+			.side-image {
+			max-width: 40%; /* Adjust as needed */
+			height: auto;
+			margin-right: 20px; /* Space between image and text */
+			}
+		
+			.header-text {
+			flex: 1; /* Takes up the remaining space */
+			font-size: 2em; /* Adjust font size as needed */
+			margin: 0;
+			}
+		
+			.side-by-side p {
+			clear: both; /* Clears the floated elements */
+			margin-top: 20px; /* Adds some space between sections */
+			}
+		
+			@media (max-width: 768px) {
+			.side-image, .header-text {
+			max-width: 100%;
+			 margin: 0 auto; /* Centers the elements on small screens */
+			}
+		
+			.side-by-side {
+			flex-direction: column;
+			align-items: flex-start;
+			}
+		
+			.side-image {
+			margin-bottom: 20px; /* Adds space between image and text on small screens */
+			}
+				
+		</style>
+
+
+
+
+		
 	</head>
 	<body class="is-preload">
 
@@ -45,47 +95,7 @@
 							
 						</header>
 						<section class="wrapper style5">
-							<style>
-								.side-by-side {
-								display: flex;
-								align-items: center; /* Aligns items vertically in the center */
-								justify-content: space-between; /* Optional: Adjusts spacing between the elements */
-								flex-wrap: wrap; /* Allows wrapping on smaller screens */
-								}
 							
-								.side-image {
-								max-width: 40%; /* Adjust as needed */
-								height: auto;
-								margin-right: 20px; /* Space between image and text */
-								}
-							
-								.header-text {
-								flex: 1; /* Takes up the remaining space */
-								font-size: 2em; /* Adjust font size as needed */
-								margin: 0;
-								}
-							
-								.side-by-side p {
-								clear: both; /* Clears the floated elements */
-								margin-top: 20px; /* Adds some space between sections */
-								}
-							
-								@media (max-width: 768px) {
-								.side-image, .header-text {
-								max-width: 100%;
-								 margin: 0 auto; /* Centers the elements on small screens */
-								}
-							
-								.side-by-side {
-								flex-direction: column;
-								align-items: flex-start;
-								}
-							
-								.side-image {
-								margin-bottom: 20px; /* Adds space between image and text on small screens */
-								}
-									
-							</style>
 							<div class="inner">
 								
 
