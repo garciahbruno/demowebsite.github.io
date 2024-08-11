@@ -2174,6 +2174,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+
 /* Actions */
 
 	ul.actions {
@@ -2330,7 +2331,23 @@ input, select, textarea {
 				}
 
 /* Table */
-
+	.flex-container {
+	    display: flex;
+	    justify-content: space-between; /* Adjusts spacing between the two halves */
+	    align-items: flex-start; /* Aligns content to the top */
+	}
+	
+	.left-half, .right-half {
+	    width: 48%; /* Adjusts the width of the left and right halves */
+	}
+	
+	.left-half {
+	    margin-right: 2%; /* Adds some spacing between the two halves */
+	}
+	
+	.right-half {
+	    margin-left: 2%;
+	}
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -2396,6 +2413,7 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+
 
 /* Button */
 
