@@ -46,13 +46,61 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
+								<style>
+								  .side-by-side {
+								    display: flex;
+								    align-items: center; /* Aligns items vertically in the center */
+								    justify-content: space-between; /* Optional: Adjusts spacing between the elements */
+								    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+								  }
+								
+								  .side-image {
+								    max-width: 40%; /* Adjust as needed */
+								    height: auto;
+								    margin-right: 20px; /* Space between image and text */
+								  }
+								
+								  .header-text {
+								    flex: 1; /* Takes up the remaining space */
+								    font-size: 2em; /* Adjust font size as needed */
+								    margin: 0;
+								  }
+								
+								  .side-by-side p {
+								    clear: both; /* Clears the floated elements */
+								    margin-top: 20px; /* Adds some space between sections */
+								  }
+								
+								  @media (max-width: 768px) {
+								    .side-image, .header-text {
+								      max-width: 100%;
+								      margin: 0 auto; /* Centers the elements on small screens */
+								    }
+								
+								    .side-by-side {
+								      flex-direction: column;
+								      align-items: flex-start;
+								    }
+								
+								    .side-image {
+								      margin-bottom: 20px; /* Adds space between image and text on small screens */
+								    }
+								  }
+								</style>
 
 								<section>
 									<h5>Left &amp; Right</h5>
-									<img src="images/IMG_3599_Original.JPG" alt="Image description" class="side-image">
-    									<h2 class="header-text">Our Mission</h2>
-									<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius. Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat. Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui.</p>
-								</section>
+								  <div class="side-by-side">
+								    <img src="images/IMG_3599_Original.JPG" alt="Image description" class="side-image">
+								    <h2 class="header-text">Our Mission</h2>
+								  </div>
+								  <p>
+								    <span class="image right">
+								      <img src="images/pic05.jpg" alt="Another image description" />
+								    </span>
+								    Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam...
+								  </p>
+								
 									
 								</section>
 
