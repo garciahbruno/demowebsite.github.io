@@ -3997,3 +3997,21 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+.image-header-container {
+    display: flex;
+    align-items: center; /* Aligns the header vertically in the middle of the image */
+}
+
+.side-image {
+    width: 200px; /* Adjust this size to your preference */
+    height: auto;
+    margin-right: 20px; /* Space between the image and the header */
+}
+
+.header-text {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0; /* Remove any default margin from the header */
+}
+
