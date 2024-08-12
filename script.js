@@ -1,7 +1,3 @@
-grecaptcha.ready(function() {
-    grecaptcha.execute();
-});
-
 function sendMail() {
     grecaptcha.ready(function() {
         grecaptcha.execute().then(function(token) {
@@ -9,9 +5,9 @@ function sendMail() {
                 name: document.getElementById("demo-name").value,
                 email: document.getElementById("demo-email").value,
                 message: document.getElementById("demo-message").value,
-                'g-recaptcha-response': token // Use the token here
+                'g-recaptcha-response': token
             };
-            
+
             emailjs.send("service_0f734hc", "template_fzlymrv", params)
                 .then(function(response) {
                     document.getElementById('notification').innerHTML = '<p>Form Submitted</p>';
@@ -26,8 +22,6 @@ function sendMail() {
         });
     });
 }
-
-
 
 
 function sendMail2() {
