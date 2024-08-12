@@ -1,6 +1,4 @@
-grecaptcha.ready(function() {
-    grecaptcha.execute();
-});
+
 
 
 function sendMail() {
