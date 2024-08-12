@@ -1,3 +1,8 @@
+grecaptcha.ready(function() {
+    grecaptcha.execute();
+});
+
+
 function sendMail() {
     grecaptcha.ready(function() {
         grecaptcha.execute().then(function(token) {
