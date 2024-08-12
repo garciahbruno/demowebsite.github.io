@@ -4,6 +4,11 @@ function sendMail() {
         email: document.getElementById("demo-email").value,
         message: document.getElementById("demo-message").value,
     };
+    var recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
+        alert("Please complete the reCAPTCHA.");
+        return; // Prevent form submission
+    }
 
     emailjs.send("service_0f734hc", "template_fzlymrv", params)
         .then(function(response) {
@@ -17,6 +22,10 @@ function sendMail() {
             document.getElementById('notification').style.color = 'red';
         });
 }
+
+
+
+
 function sendMail2() {
     let params = {
         name: document.getElementById("demo-name").value,
