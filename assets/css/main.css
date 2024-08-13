@@ -3607,13 +3607,15 @@ input, select, textarea {
 	    max-width: 700px;
 	    margin: 0 auto;
 	    padding: 20px;
-	    background-color: #0d0d0d; /* Dark background matching the site */
-	    color: #fff; /* White text for contrast */
-	    font-family: 'Lora', serif; /* Assuming this matches the site's typography */
+	    background-color: #fff; /* White background */
+	    color: #2e3842; /* Dark text color matching your site's scheme */
+	    font-family: "Open Sans", Helvetica, sans-serif; /* Matches your site's font */
+	    border-radius: 3px;
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 	}
 	
 	.faq-item {
-	    border-bottom: 1px solid #444; /* Subtle border to separate questions */
+	    border-bottom: 1px solid #d42828; /* Red border matching the site’s accent color */
 	    padding: 15px 0;
 	}
 	
@@ -3623,15 +3625,17 @@ input, select, textarea {
 	    display: flex;
 	    justify-content: space-between;
 	    align-items: center;
-	    color: #eaeaea; /* Light gray text */
+	    color: #d42828; /* Red text color for questions */
 	}
 	
 	.faq-answer {
-	    display: none;
-	    margin-top: 10px;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.5s ease-in-out;
 	    font-size: 1em;
 	    line-height: 1.6em;
-	    color: #bfbfbf; /* Slightly darker gray for answers */
+	    color: #2e3842;
+	    padding-top: 10px;
 	}
 	
 	.faq-icon {
@@ -3640,12 +3644,13 @@ input, select, textarea {
 	}
 	
 	.faq-item.active .faq-answer {
-	    display: block;
+	    max-height: 200px; /* Adjust based on content length */
 	}
 	
 	.faq-item.active .faq-icon {
-	    transform: rotate(45deg); /* Rotate to a plus icon when active */
+	    transform: rotate(45deg); /* Rotates the icon */
 	}
+
 
 
 
