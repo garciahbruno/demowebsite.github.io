@@ -3608,7 +3608,7 @@ input, select, textarea {
 	    margin: 0 auto;
 	    padding: 20px;
 	    color: #ffffff; /* White text */
-	    font-family: "Spectral", serif; /* Using the Spectral font family */
+	    font-family: inherit; /* Using the Spectral font family */
 	}
 	
 	.faq-item {
@@ -3617,14 +3617,15 @@ input, select, textarea {
 	}
 	
 	.faq-question {
-	    cursor: pointer;
-	    font-size: 1.2em;
-	    display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    color: #ffffff;
-	    font-weight: 600; /* Bold for emphasis */
-	    letter-spacing: 0.05em; /* Slight spacing for readability */
+		cursor: pointer;
+		font-size: 1.2em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #333;
+		font-weight: 600; /* Bold for emphasis */
+		letter-spacing: 0.05em; /* Slight spacing for readability */
+		font-family: "Open Sans", Helvetica, sans-serif;
 	}
 	
 	.faq-answer {
@@ -3634,8 +3635,8 @@ input, select, textarea {
 	    font-size: 1em;
 	    line-height: 1.6em;
 	    padding-top: 10px;
-	    color: rgba(255, 255, 255, 0.7);
-	    font-family: "Spectral", serif; /* Consistent font for answers */
+	    color: #444;
+	    font-family: "Open Sans", Helvetica, sans-serif; /* Consistent font for answers */
 	}
 	
 	.faq-icon {
