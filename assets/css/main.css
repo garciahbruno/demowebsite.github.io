@@ -71,6 +71,50 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/* FAQ Styles */
+#faq h2 {
+	    text-align: center;
+	    margin-bottom: 2rem;
+	    font-size: 2rem;
+	    color: #333;
+	}
+	
+	.accordion {
+	    background-color: #fff;
+	    color: #333;
+	    cursor: pointer;
+	    padding: 1rem;
+	    width: 100%;
+	    text-align: left;
+	    border: none;
+	    outline: none;
+	    transition: background-color 0.2s ease;
+	    font-size: 1.25rem;
+	    font-weight: bold;
+	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	    margin-bottom: 1rem;
+	    border-radius: 5px;
+	}
+	
+	.accordion:hover {
+	    background-color: #f0f0f0;
+	}
+	
+	.panel {
+	    padding: 0 1rem;
+	    background-color: #f9f9f9;
+	    display: none;
+	    overflow: hidden;
+	    border-left: 5px solid #333;
+	    border-radius: 0 5px 5px 5px;
+	}
+	
+	.panel p {
+	    padding: 1rem 0;
+	    margin: 0;
+	    font-size: 1rem;
+	    color: #666;
+	}
 
 /* Basic */
 
