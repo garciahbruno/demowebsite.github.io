@@ -72,49 +72,49 @@ input, select, textarea {
 	appearance: none;
 }
 /* FAQ Styles */
-#faq h2 {
-	    text-align: center;
-	    margin-bottom: 2rem;
-	    font-size: 2rem;
-	    color: #333;
+/* FAQ Section Styles */
+.faq-item {
+	    margin-bottom: 10px;
 	}
 	
-	.accordion {
-	    background-color: #fff;
-	    color: #333;
+	.faq-title {
+	    background-color: #1a1a1a; /* Darker background for titles */
+	    color: #ffffff; /* White text to contrast */
+	    padding: 15px;
 	    cursor: pointer;
-	    padding: 1rem;
-	    width: 100%;
-	    text-align: left;
-	    border: none;
-	    outline: none;
-	    transition: background-color 0.2s ease;
-	    font-size: 1.25rem;
-	    font-weight: bold;
-	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	    margin-bottom: 1rem;
+	    font-size: 1.1em;
 	    border-radius: 5px;
+	    transition: background-color 0.3s ease;
 	}
 	
-	.accordion:hover {
-	    background-color: #f0f0f0;
+	.faq-title:hover {
+	    background-color: #2ecc71; /* Slight highlight on hover */
 	}
 	
-	.panel {
-	    padding: 0 1rem;
-	    background-color: #f9f9f9;
-	    display: none;
+	.faq-content {
+	    max-height: 0;
 	    overflow: hidden;
-	    border-left: 5px solid #333;
-	    border-radius: 0 5px 5px 5px;
+	    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+	    background-color: #333; /* Matches site's darker theme */
+	    padding: 0 15px;
+	    border-left: 5px solid #2ecc71; /* Green left border for accent */
+	    border-radius: 0 0 5px 5px;
 	}
 	
-	.panel p {
-	    padding: 1rem 0;
-	    margin: 0;
-	    font-size: 1rem;
-	    color: #666;
+	.faq-content.open {
+	    max-height: 300px; /* Adjust based on your content size */
+	    padding-top: 10px;
+	    padding-bottom: 10px;
 	}
+	
+	.faq-content p {
+	    margin: 0;
+	    padding: 10px 0;
+	    color: #dcdcdc; /* Light grey text */
+	    font-size: 0.95em;
+	    line-height: 1.5em;
+	}
+
 
 /* Basic */
 
