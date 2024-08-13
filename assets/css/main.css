@@ -3604,13 +3604,11 @@ input, select, textarea {
 			}
 /*FAQ STUFF*/
 	.faq-container {
-		font-family: inherit;
-		color: #2e3842;
-		max-width: 700px;
-		margin: 0 auto;
-		padding: 20px;
-	    
-	    
+	    max-width: 700px;
+	    margin: 0 auto;
+	    padding: 20px;
+	    color: #ffffff; /* White text */
+	    font-family: "Spectral", serif; /* Using the Spectral font family */
 	}
 	
 	.faq-item {
@@ -3619,24 +3617,25 @@ input, select, textarea {
 	}
 	
 	.faq-question {
-	    
-	    font-size: 1em;
-	    line-height: 1.5em;
-	    color: #333;
-	    font-weight: 800;
-	    letter-spacing: 0.225em;
-	    text-transform: uppercase;
-
+	    cursor: pointer;
+	    font-size: 1.2em;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    color: #ffffff;
+	    font-weight: 600; /* Bold for emphasis */
+	    letter-spacing: 0.05em; /* Slight spacing for readability */
 	}
 	
 	.faq-answer {
-	    color: #333;
-	    font-family: "Open Sans", Helvetica, sans-serif;
-	    font-size: 15pt;
-	    font-weight: 400;
-	    letter-spacing: 0.075em;
-	    line-height: 1.65em;
-	    margin: 0 0 2em 0;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.5s ease-in-out;
+	    font-size: 1em;
+	    line-height: 1.6em;
+	    padding-top: 10px;
+	    color: rgba(255, 255, 255, 0.7);
+	    font-family: "Spectral", serif; /* Consistent font for answers */
 	}
 	
 	.faq-icon {
@@ -3651,47 +3650,6 @@ input, select, textarea {
 	.faq-item.active .faq-icon {
 	    transform: rotate(45deg);
 	}
-	.faq {
-	    width: 100%;
-	    max-width: 800px;
-	    margin: 0 auto;
-	}
-	
-	.faq-item {
-	    margin-bottom: 1em;
-	}
-	
-	.faq-button {
-	    background: #333;
-	    color: #fff;
-	    border: none;
-	    padding: 0.5em 1em;
-	    width: 100%;
-	    text-align: left;
-	    cursor: pointer;
-	    font-size: 1em;
-	    border-radius: 5px;
-	    outline: none;
-	}
-	
-	.faq-content {
-	    max-height: 0;
-	    overflow: hidden;
-	    transition: max-height 0.4s ease-out;
-	    background: #444;
-	    padding: 0 1em;
-	    color: #fff;
-	}
-	
-	.faq-content p {
-	    margin: 1em 0;
-	}
-	
-	/* Show the content when expanded */
-	.faq-item.active .faq-content {
-	    max-height: 200px; /* Adjust as needed */
-	}
-	
 
 
 
@@ -4134,6 +4092,5 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
-
 
 
