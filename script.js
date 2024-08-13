@@ -39,32 +39,15 @@ function sendMail2() {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const faqTitles = document.querySelectorAll(".faq-title");
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', function() {
+        let parent = this.parentElement;
+        parent.classList.toggle('active');
 
-    faqTitles.forEach(title => {
-        title.addEventListener("click", function() {
-            const content = this.nextElementSibling;
-            const allContents = document.querySelectorAll(".faq-content");
-
-            // Close all open contents except the one clicked
-            allContents.forEach(c => {
-                if (c !== content) {
-                    c.style.maxHeight = "0";
-                    c.style.paddingTop = "0";
-                    c.style.paddingBottom = "0";
-                }
-            });
-
-            // Toggle the clicked content
-            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-                content.style.maxHeight = "0";
-                content.style.paddingTop = "0";
-                content.style.paddingBottom = "0";
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.style.paddingTop = "10px";
-                content.style.paddingBottom = "10px";
+        // Close others
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            if (faq !== parent) {
+                faq.classList.remove('active');
             }
         });
     });
