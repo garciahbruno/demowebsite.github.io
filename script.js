@@ -36,3 +36,27 @@ function sendMail2() {
             document.getElementById('notification').style.color = 'red';
         });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", function() {
+            const answer = item.querySelector(".faq-answer");
+
+            // Toggle the answer visibility
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                // Hide all other answers
+                document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
+                // Show the clicked answer
+                answer.style.display = "block";
+            }
+        });
+    });
+});
