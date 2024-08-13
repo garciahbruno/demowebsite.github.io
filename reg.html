@@ -69,29 +69,31 @@
 									</ul>
 								<section>
 								<section>
-									<h4>Interest Form</h4>
-									<div id="notification" style="display:none;"></div>
-
-									<form method="post" action="#">
-									    <div class="row gtr-uniform">
-									        <div class="col-6 col-12-xsmall">
-									            <input type="text" name="demo-name" id="demo-name" placeholder="Name" />
-									        </div>
-									        <div class="col-6 col-12-xsmall">
-									            <input type="email" name="demo-email" id="demo-email" placeholder="Email" />
-									        </div>
-									        <div class="col-12">
-									            <textarea name="demo-message" id="demo-message" placeholder="Additional Information" rows="6"></textarea>
-									        </div>
-									        <div class="col-12">
-									            <ul class="actions">
-									                <li><input type="submit" value="Send Message" class="primary" onclick="sendMail(); return false;" /></li>
-									            </ul>
-									        </div>
-									    </div>
-									</form>
-
+								    <h4>Interest Form</h4>
+								    <div id="notification" style="display:none;"></div>
+								    
+								    <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+								        <form method="post" action="#" style="width: 100%; max-width: 500px; margin: 0 auto;">
+								            <div class="row gtr-uniform" style="display: flex; flex-direction: column;">
+								                <div class="col-6 col-12-xsmall" style="width: 100%; margin-bottom: 10px;">
+								                    <input type="text" name="demo-name" id="demo-name" placeholder="Name" style="width: 100%; padding: 10px; box-sizing: border-box;" />
+								                </div>
+								                <div class="col-6 col-12-xsmall" style="width: 100%; margin-bottom: 10px;">
+								                    <input type="email" name="demo-email" id="demo-email" placeholder="Email" style="width: 100%; padding: 10px; box-sizing: border-box;" />
+								                </div>
+								                <div class="col-12" style="width: 100%; margin-bottom: 10px;">
+								                    <textarea name="demo-message" id="demo-message" placeholder="Additional Information" rows="6" style="width: 100%; padding: 10px; box-sizing: border-box;"></textarea>
+								                </div>
+								                <div class="col-12" style="width: 100%; text-align: center;">
+								                    <ul class="actions" style="list-style: none; padding: 0;">
+								                        <li><input type="submit" value="Send Message" class="primary" style="padding: 10px 20px; font-size: 16px;" onclick="sendMail(); return false;" /></li>
+								                    </ul>
+								                </div>
+								            </div>
+								        </form>
+								    </div>
 								</section>
+								
 
 								<section>
 									<h4>More Questions?</h4>
