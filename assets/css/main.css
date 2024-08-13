@@ -3604,8 +3604,8 @@ input, select, textarea {
 			}
 /*FAQ STUFF*/
 	.faq-container {
-		font-family: inherit
-		color: inherit
+		font-family: inherit;
+		color: #2e3842;
 		max-width: 700px;
 		margin: 0 auto;
 		padding: 20px;
