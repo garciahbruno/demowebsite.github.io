@@ -39,17 +39,9 @@ function sendMail2() {
 
 
 
-document.querySelectorAll('.faq-question').forEach(item => {
-    item.addEventListener('click', function() {
-        let parent = this.parentElement;
-        parent.classList.toggle('active');
+function toggleAnswer(element) {
+    const faqItem = element.parentElement;
+    faqItem.classList.toggle('active');
+}
 
-        // Close others
-        document.querySelectorAll('.faq-item').forEach(faq => {
-            if (faq !== parent) {
-                faq.classList.remove('active');
-            }
-        });
-    });
-});
 
