@@ -71,56 +71,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-/* FAQ Styles */
-/* FAQ Section Styles */
-	.faq-section {
-	    margin: 2em 0;
-	}
+
+/* FAQ Section */
 	
-	.faq-item {
-	    margin-bottom: 1em;
-	    border-bottom: 1px solid #ddd;
-	    padding-bottom: 0.5em;
-	}
-	
-	.faq-question {
-	    background-color: #444;
-	    color: white;
-	    width: 100%;
-	    text-align: left;
-	    padding: 1em;
-	    font-size: 1.2em;
-	    border: none;
-	    cursor: pointer;
-	    outline: none;
-	    transition: background-color 0.3s ease;
-	}
-	
-	.faq-question:hover {
-	    background-color: #333;
-	}
-	
-	.faq-answer {
-	    max-height: 0;
-	    overflow: hidden;
-	    transition: max-height 0.3s ease, padding 0.3s ease;
-	    padding: 0 1em;
-	    background-color: #f8f8f8;
-	    color: #444;
-	}
-	
-	.faq-answer p {
-	    margin: 0.5em 0;
-	}
-	
-	.faq-item.active .faq-answer {
-	    max-height: 100px; /* Adjust this value as needed */
-	    padding: 1em;
-	}
-	
-	.faq-item.active .faq-question {
-	    background-color: #333;
-	}
 
 
 
@@ -1862,6 +1815,45 @@ input, select, textarea {
 			display: none;
 		}
 
+	}
+/*faq stuff*/
+	#faq {
+	    max-width: 800px;
+	    margin: 0 auto;
+	    padding: 20px;
+	    font-family: 'Poppins', sans-serif; /* Match your site's font */
+	}
+	
+	.faq-item {
+	    border-bottom: 1px solid #ccc;
+	    margin-bottom: 10px;
+	}
+	
+	.faq-question {
+	    cursor: pointer;
+	    padding: 15px;
+	    background-color: #333; /* Adjust to fit your color scheme */
+	    color: #fff;
+	    font-size: 1.2em;
+	    transition: background-color 0.3s ease;
+	}
+	
+	.faq-question:hover {
+	    background-color: #555; /* Lighter shade for hover effect */
+	}
+	
+	.faq-answer {
+	    max-height: 0;
+	    overflow: hidden;
+	    padding: 0 15px;
+	    background-color: #f9f9f9;
+	    transition: max-height 0.5s ease;
+	    color: #333; /* Adjust to fit your color scheme */
+	}
+	
+	.faq-item.active .faq-answer {
+	    max-height: 300px; /* Adjust as needed */
+	    padding: 15px;
 	}
 
 /* Form */
