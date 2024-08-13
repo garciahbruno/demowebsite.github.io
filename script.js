@@ -39,7 +39,29 @@ function sendMail2() {
 
 
 
-function toggleAnswer(element) {
-    const faqItem = element.parentElement;
-    faqItem.classList.toggle('active');
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const faqButtons = document.querySelectorAll('.faq-button');
+
+    faqButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const parentItem = this.parentElement;
+            const content = parentItem.querySelector('.faq-content');
+
+            if (parentItem.classList.contains('active')) {
+                // Collapse the current item
+                content.style.maxHeight = null;
+                parentItem.classList.remove('active');
+            } else {
+                // Collapse all items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-content').style.maxHeight = null;
+                });
+
+                // Expand the clicked item
+                parentItem.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+});
