@@ -1,4 +1,5 @@
 Camp AG Website by Bruno Garcia
+camp-ag.org
 
 
 # Summer Camp Website
